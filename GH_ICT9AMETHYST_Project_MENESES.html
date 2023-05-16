@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>Length Converter</title>
+	<style>
+		table{
+			border-style:double;
+			border-width:4px;
+			border-color:darkblue;
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body bgcolor="b7a6f2"> <center>
+<hr>
+<hr>
+<br>
+	<img src="https://pbs.twimg.com/ext_tw_video_thumb/1520008930348478467/pu/img/-fPTiATeYBUvL-v1.jpg:large" width="1517" height="90"style="border-style: double;">
+
+<table bgcolor="#c9d7ff">
+<tr>
+<td width="600" height="450"><center>
+	<h1><button class="btn-info ">LENGTH CONVERTER</button></h1>
+<br>
+<br>
+	<p><b>Millimeters to given measurements</b></p>
+	<button class="btn-info "><input type="text" Id="id1" placeholder="Input Value"></button>	
+<br>
+<br>
+
+	<p><b>Answer:</b></p>
+	<button><p id="answer"></p></button>
+
+<br>
+<br>
+<br>
+<br>
+
+	<button class="btn-outline-info"><input type="submit" value="To Centimeters" onclick="Blorb()"></button>
+	<button class="btn-outline-info"><input type="submit" value="To Meters" onclick="blorbo()"></button>
+	<button class="btn-outline-info"><input type="submit" value="To Kilometers" onclick="Blor()"></button>
+
+	<script>
+		function Blorb() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(10);
+			document.getElementById('answer').innerHTML = answer + " Centimeters";
+		}
+	</script>
+
+	<script>
+		function blorbo() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(1000);
+			document.getElementById('answer').innerHTML =  answer + " Meters";
+		}
+	</script>
+
+	<script>
+		function Blor() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(1000000);
+			document.getElementById('answer').innerHTML = answer + " Kilometers";
+		}
+	</script>
+
+</td>
+</tr>
+</table>
+
+	<img src="https://pbs.twimg.com/ext_tw_video_thumb/1520008930348478467/pu/img/-fPTiATeYBUvL-v1.jpg:large" width="1517" height="90"style="border-style: double;">
+
+<br><br><br><br>
+
+<hr>
+<hr>
+</body> </center>
+</html>
+	
